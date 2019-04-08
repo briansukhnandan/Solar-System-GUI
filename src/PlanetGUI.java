@@ -172,10 +172,3 @@ class PlanetGUI extends JFrame {
 	
 	
 }
-
-public class yourListener extends MouseAdapter{ 
-    public void mouseClicked(MouseEvent e){
-        JLabel labelReference=(JLabel)e.getSource();
-            labelReference.someMethod();
-   }
-}
