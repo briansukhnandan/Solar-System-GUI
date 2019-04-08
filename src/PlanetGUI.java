@@ -12,6 +12,12 @@ import java.io.IOException;
 
 class PlanetGUI extends JFrame {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
 	public PlanetGUI(String title) throws IOException {
 		
 		//Initializers
