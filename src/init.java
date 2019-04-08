@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 
 public class init {
@@ -22,6 +21,7 @@ public class init {
 		
 		PlanetGUI Interface = new PlanetGUI("The Solar System");
 		
+		//Insert data for the planets in order.
 		Interface.insertPictures(Mercury);
 		Interface.insertPictures(Venus);
 		Interface.insertPictures(Earth);
