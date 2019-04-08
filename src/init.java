@@ -33,6 +33,7 @@ public class init {
 		
 		Interface.showGUI();
 		
+		System.out.println("GUI Loaded");
 		
 	}
 	
