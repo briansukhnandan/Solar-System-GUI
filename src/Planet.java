@@ -5,6 +5,7 @@ import javax.imageio.ImageIO;
 
 public class Planet extends Celestial_Object {
 	
+	public String name;
 	public int diameter; 
 	public int numOfMoons;
 	public float revolution; 
@@ -13,10 +14,11 @@ public class Planet extends Celestial_Object {
 	public Image pictureOfPlanet;
 	
 	
-	public Planet(int diameter, int numOfMoons, float revolution, float rotation, double distanceFromSun, Image pictureOfPlanet) {
+	public Planet(String name, int diameter, int numOfMoons, float revolution, float rotation, double distanceFromSun, Image pictureOfPlanet) {
 		
-		super(diameter, rotation);
+		super(diameter, rotation, name);
 		
+		this.name = name;
 		this.diameter = diameter;
 		this.numOfMoons = numOfMoons;
 		this.revolution = revolution;
@@ -24,6 +26,10 @@ public class Planet extends Celestial_Object {
 		this.rotation = rotation;	
 		this.pictureOfPlanet = pictureOfPlanet;
 		
+	}
+	
+	public String getName() {
+		return this.name;
 	}
 	
 	public int getDiameter(int diameter) {
@@ -45,6 +51,7 @@ public class Planet extends Celestial_Object {
 	public double distanceFromSun(double distanceFromSun) {
 		return distanceFromSun;
 	}
+	
 	
 	
 }
